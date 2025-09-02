@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>University</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
 </head>
 <body>
     <section class="header">
         <nav>
             <a href="index.html"><img src="images/logo.png" alt=""></a>
-            <div class="nav-links">
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="">HOME</a></li>
                     <li><a href="">ABOUT</a></li>
@@ -19,13 +21,71 @@
                     <li><a href="">CONTACT</a></li>
                 </ul>
             </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
+        <div class="text-box">
+            <h1>World's Biggest University</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text<br>ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <a href=""class="hero-btn">Visit Us to know More</a>
+        </div>
     </section>
-    <div class="text-box">
-        <h1>World's Biggest University</h1>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text<br>ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-        <a href=""class="hero-btn">Visit Us to know More</a>
 
-    </div>
+    <!--Course-->
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text<br>ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text<br>ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text<br>ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+            <div class="course-col">
+                <h3>Post Graduation</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text<br>ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--campus-->
+    <section class="campus">
+        <h1>Our Global Campus</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text<br>ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        <div class="row">
+            <div class="campus-col">
+                <img src="images/london.png">
+                <div class="layer">
+                    <h3>LONDON</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="images/newyork.png">
+                <div class="layer">
+                    <h3>NEW YORK</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="images/washington.png">
+                <div class="layer">
+                    <h3>WASHINGTON</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Js for Toggle Menu-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
 </body>
 </html>
