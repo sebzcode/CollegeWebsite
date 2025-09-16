@@ -21,6 +21,7 @@ A responsive college website built using **HTML**, **CSS**, **PHP**, and images.
 Here’s the project structure at a glance:
 
 CollegeWebsite/
+
 ├── index.html # Home page
 
 ├── about.html # About the college
