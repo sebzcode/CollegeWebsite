@@ -22,13 +22,21 @@ Here’s the project structure at a glance:
 
 CollegeWebsite/
 ├── index.html # Home page
+
 ├── about.html # About the college
+
 ├── course.html # Course listings / info
+
 ├── blog.html # Blog / news section
+
 ├── contact.html # Contact page with form
+
 ├── formHandler.php # PHP backend to handle form submissions
+
 ├── style.css # Global styling
+
 ├── images/ # Folder for images
+
 └── README.md # This documentation
 
 ---
